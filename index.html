@@ -45,7 +45,7 @@
                     <ul class="header__narbar-list">
                         <li class="header__narbar-item header__narbar-item-on">
                             <a href="" class="header__narbar-item-link">
-                                <i class="header__narbar-icon fa-solid fa-bell fa-sm"></i>Thông báo</a>
+                                <i class="header__narbar-icon fa-regular fa-bell fa-sm"></i>Thông báo</a>
                             <div class="header__notifine">
                                 <header class="header__notifine-header">
                                     <h3>Thông báo mới nhận</h3>
@@ -92,18 +92,38 @@
                         </li>
                         <li class="header__narbar-item">
                             <a href="" class="header__narbar-item-link">
-                                <i class="header__narbar-icon fa-solid fa-circle-question fa-sm"></i>Trợ giúp</a>
+                                <i class="header__narbar-icon fa-regular fa-circle-question fa-sm"></i>Trợ giúp</a>
                         </li>
-                        <li class="header__narbar-item header__narbar-item--strong header__narbar-item--divide">Đăng kí
+                        <!-- <li class="header__narbar-item header__narbar-item--strong header__narbar-item--divide">Đăng kí
                         </li>
-                        <li class="header__narbar-item header__narbar-item--strong">Đăng nhập</li>
+                        <li class="header__narbar-item header__narbar-item--strong">Đăng nhập</li> -->
+                        <li class="header__narbar-item header__narbar-user">
+                            <img src="./Assets/Image/Avatar.jpg" alt="" class="header__narbar-user-img">
+                            <span class="header__narbar-user-name">Tiến Đức</span>
+                            <ul class="header__narbar-user-menu">
+                                <li class="header__narbar-user-menu-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__narbar-user-menu-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__narbar-user-menu-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__narbar-user-menu-item header__narbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nar>
                 <!-- Header with search -->
                 <div class="header-with-search">
                     <div class="header__logo">
-                        <img src="https://license.sandvine.com/images/Sandvine_logo_solid_grey_HR.png" alt="Logo"
-                            class="header__logo-img">
+                        <a href="/">
+                            <img src="https://license.sandvine.com/images/Sandvine_logo_solid_grey_HR.png" alt="Logo"
+                                class="header__logo-img">
+                        </a>
                     </div>
                     <div class="header__search">
                         <div class="header__search-input-wrap">
@@ -227,6 +247,106 @@
         </header>
 
         <div class="main">
+            <div class="grid">
+                <div class="grid__row main__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">trang điểm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">trang điểm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">trang điểm</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="fas fa-angle-down select-input__icon"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <sapn class="home-filter__page-current">1</sapn>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/a5124042eef8ea7a9f01114f7165c84c);"></div>
+                                        <h4 class="home-product-item__name">Loa bluetooth đồng hồ G5, loa mini không dây nghe nhạc làm đèn ngủ màn hình soi gương</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">900.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <!-- <i class="fa-solid fa-heart"></i> -->
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">G5</span>
+                                            <span class="home-product-item__country">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
