@@ -521,6 +521,7 @@
 .header__search-select-label{
     font-size: 1.4rem;
     color: var(--text-color);
+    font-weight: 500;
 }
 .header__search-select-icon{
     font-size: 1.4rem;
@@ -545,6 +546,49 @@
     font-size: 1.4rem;
     color: var(--white-color);
 }
+.header__sort-bar{
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--header-sort-bar-height);
+    background-color: var(--white-color);
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-weight: 500;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+}
+.header__sort-item{
+    flex: 1;
+}
+.header__sort-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: block;
+    color: var(--text-color);
+    height: 100%;
+    line-height: var(--header-sort-bar-height);
+    text-align: center;
+    position: relative;
+}
+.header__sort-link::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    height: 60%;
+    border-left: 1px solid #e5e5e5;
+    transform: translateY(-50%);
+}
+.header__sort-item--active .header__sort-link{
+    color: var(--primary-color);
+}
+.header__sort-item:first-child .header__sort-link::before{
+    display: none;
+}
 .header__search-option{
     position: absolute;
     right:0;
@@ -558,6 +602,7 @@
     display: none;
     animation: fadeIn ease-in 0.2s;
     z-index: 1;
+    font-weight: 500;
 }
 .header__search-option::before{
     content: "";
@@ -795,15 +840,18 @@
     color: #555555;
     font-size: 1.4rem;
     margin-right: 16px;
+    font-weight: 500;
 }
 .home-filter__btn{
     margin-right: 12px;
     min-width: 90px;
+    font-weight: 500
 }
 .home-filter__page-num{
     font-size: 1.5rem;
     color: var(--text-color);
     margin-right: 22px;
+    font-weight: 500;
 }
 .home-filter__page-current{
     color: var(--primary-color);
@@ -835,6 +883,9 @@
 }
 .home-filter__page-btn--disable .home-filter__page-icon{
     color: #ccc;
+}
+.select-input__label{
+    font-weight: 500;
 }
 
 /* Product */

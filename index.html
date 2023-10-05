@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./Assets/CSS/base.css">
     <link rel="stylesheet" href="./Assets/CSS/main.css">
+    <link rel="stylesheet" href="./Assets/CSS/grid.css">
+    <link rel="stylesheet" href="./Assets/CSS/reponsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./Assets/Fonts/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +21,8 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nar class="header__narbar">
+            <div class="grid wide">
+                <nav class="header__narbar hide-on-mobile-tablet">
                     <ul class="header__narbar-list">
                         <li class="header__narbar-item header__narbar-QR-On header__narbar-item--divide">
                             Vào cửa hàng trên ứng dụng DT-Shop
@@ -116,10 +118,10 @@
                             </ul>
                         </li>
                     </ul>
-                </nar>
+                </nav>
                 <!-- Header with search -->
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <div class="header__logo hide-on-tablet">
                         <a href="/">
                             <img src="https://license.sandvine.com/images/Sandvine_logo_solid_grey_HR.png" alt="Logo"
                                 class="header__logo-img">
@@ -237,10 +239,24 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <div class="main">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row main__content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -262,7 +278,7 @@
                         </nav>
                     </div>
                     <div class="grid__column-10">
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="home-filter__btn btn">Phổ biến</button>
                             <button class="home-filter__btn btn btn--primary">Mới nhất</button>
@@ -283,7 +299,7 @@
 
                             <div class="home-filter__page">
                                 <span class="home-filter__page-num">
-                                    <sapn class="home-filter__page-current">1</sapn>/14
+                                    <span class="home-filter__page-current">1</span>/14
                                 </span>
                                 <div class="home-filter__page-control">
                                     <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
@@ -762,7 +778,7 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-product-2">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
