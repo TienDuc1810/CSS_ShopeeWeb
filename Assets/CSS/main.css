@@ -1,3 +1,6 @@
+.app{
+    overflow: hidden;
+}
 .header{
     height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -411,7 +414,13 @@
 }
 .header__logo-img{
     margin-top: 5px;
-    width: 150px;
+    width: 100%;
+}
+.header__logo-link{
+    display: block;
+    line-height: 0;
+    color: transparent;
+    text-decoration: none;
 }
 .header__search{
     background-color: var(--white-color);
@@ -431,6 +440,7 @@
     display: inline-block;
     padding: 0 12px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .header__cart-list::before{
     position: absolute;
@@ -498,6 +508,14 @@
     flex:1;
     height: 100%;
     position: relative;
+}
+.header__mobile-search{
+    padding: 0 12px;
+    display: none;
+}
+.header__mobile-search-icon{
+    font-size: 2.6rem;
+    color:var(--white-color);
 }
 .header__search-input{
     height: 100%;
@@ -792,9 +810,6 @@
     list-style: none;
     margin-left: 9px;
 }
-.category-item{
-
-}
 .category-item--active .category-item__link{
     color: var(--primary-color);
 }
@@ -823,6 +838,59 @@
 }
 
 /* Home */
+.mobile-category{
+    display: none;
+}
+.mobile-category__list{
+    display: flex;
+    list-style: none;
+    padding:0 0 0 9px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.mobile-category__list::-webkit-scrollbar{
+    display: none;
+}
+.mobile-category__item{
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.mobile-category__item:last-child{
+    margin-right: 8px;
+}
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link{
+    background-color: #87afd8;
+}
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link{
+    background-color: #76c9bd;
+}
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link{
+    background-color: #88cf81;
+}
+.mobile-category__link{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    width: 110px;
+    height: 40px;
+    display: -webkit-box;
+    border-radius: 5px;
+    overflow: hiden;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; */
+}
+.mobile-category__link span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
 .home-filter{
     background-color: rgba(0,0,0,0.04);
     display: flex;
@@ -1055,6 +1123,7 @@ i.home-product-item__like-on{
 }
 .home-product__pagination{
     margin: 48px 0 32px;
+    padding-left: 0;
 }
 .footer{
     border-top: 4px solid var(--primary-color);
