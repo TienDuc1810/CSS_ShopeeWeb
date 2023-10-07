@@ -305,10 +305,67 @@
                             </ul>
 
                             <h3 class="category__heading">
-                                <i class="category__heading-icon fa-solid fa-list"></i>
-                                Tất Cả Danh Mục
+                                <i class="category__heading-icon fa-solid fa-filter"></i>
+                                Bộ Lọc Tìm Kiếm
                             </h3>
+                            <div class="dash"></div>
+                            <div class="category__filter">
+                                <h3 class="category__filter-title">Nơi Bán</h3>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="HaNoi">
+                                    <label for="HaNoi">Hà Nội</label>
+                                </div>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="TPHCM">
+                                    <label for="TPHCM">TP.Hồ Chí Minh</label>
+                                </div>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="DaNang">
+                                    <label for="DaNang">Đà Nẵng</label>
+                                </div>
+                                <a href="#" class="category__filter-add">Thêm
+                                    <i class="category__filter-add-icon fa-solid fa-chevron-down"></i></a>
+                            </div>
+
+                            <div class="dash"></div>
+                            <div class="category__filter">
+                                <h3 class="category__filter-title">Đơn Vị Vận Chuyển</h3>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="DVVC_Hoatoc">
+                                    <label for="DVVC_Hoatoc">Hỏa Tốc</label>
+                                </div>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="DVVC_Nhanh">
+                                    <label for="DVVC_Nhanh">Nhanh</label>
+                                </div>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="DVVC_Tietkiem">
+                                    <label for="DVVC_Tietkiem">Tiết Kiệm</label>
+                                </div>
+                            </div>
+
+                            <div class="dash"></div>
+                            <div class="category__filter">
+                                <h3 class="category__filter-title">Loại Shop</h3>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="Shopmall">
+                                    <label for="Shopmall">DT-Shop Mall</label>
+                                </div>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="Shopyeuthich">
+                                    <label for="Shopyeuthich">Shop Yêu Thích</label>
+                                </div>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="Shopxuhuong">
+                                    <label for="Shopxuhuong">Shop Xu Hướng</label>
+                                </div>
+                                <div class="category__filter-item">
+                                    <input type="checkbox" class="category__filter-checkbox" id="Shopdacbiet">
+                                    <label for="Shopdacbiet">Shop Đặc Biệt</label>
+                                </div>
+                            </div>
                         </nav>
+                        <button class="category__filter-delete btn btn--primary hide-on-mobile-tablet">Xóa Tất Cả</button>
                     </div>
                     <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
@@ -371,6 +428,216 @@
                         <div class="home-product">
                             <div class="row sm-gutter">
                                 <!-- Product item -->
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/a5124042eef8ea7a9f01114f7165c84c);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Loa bluetooth đồng hồ G5, loa mini không dây
+                                            nghe nhạc làm đèn ngủ màn hình soi gương</h4>
+                                        <div class="home-product-item__outstanding">
+                                            <span class="home-product-item__outstanding-trend">#ShopXuHuong</span>
+                                        </div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">238.000đ</span>
+                                            <span class="home-product-item__price-current">99.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-check">
+                                                <i class="home-product-item__like-off fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-on fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 25.9k</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__country">Nam Định</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">58%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/a5124042eef8ea7a9f01114f7165c84c);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Loa bluetooth đồng hồ G5, loa mini không dây
+                                            nghe nhạc làm đèn ngủ màn hình soi gương</h4>
+                                        <div class="home-product-item__outstanding">
+                                            <span class="home-product-item__outstanding-trend">#ShopXuHuong</span>
+                                        </div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">238.000đ</span>
+                                            <span class="home-product-item__price-current">99.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-check">
+                                                <i class="home-product-item__like-off fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-on fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 25.9k</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__country">Nam Định</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">58%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/a5124042eef8ea7a9f01114f7165c84c);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Loa bluetooth đồng hồ G5, loa mini không dây
+                                            nghe nhạc làm đèn ngủ màn hình soi gương</h4>
+                                        <div class="home-product-item__outstanding">
+                                            <span class="home-product-item__outstanding-trend">#ShopXuHuong</span>
+                                        </div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">238.000đ</span>
+                                            <span class="home-product-item__price-current">99.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-check">
+                                                <i class="home-product-item__like-off fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-on fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 25.9k</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__country">Nam Định</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">58%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/a5124042eef8ea7a9f01114f7165c84c);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Loa bluetooth đồng hồ G5, loa mini không dây
+                                            nghe nhạc làm đèn ngủ màn hình soi gương</h4>
+                                        <div class="home-product-item__outstanding">
+                                            <span class="home-product-item__outstanding-trend">#ShopXuHuong</span>
+                                        </div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">238.000đ</span>
+                                            <span class="home-product-item__price-current">99.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-check">
+                                                <i class="home-product-item__like-off fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-on fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 25.9k</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__country">Nam Định</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">58%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/a5124042eef8ea7a9f01114f7165c84c);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Loa bluetooth đồng hồ G5, loa mini không dây
+                                            nghe nhạc làm đèn ngủ màn hình soi gương</h4>
+                                        <div class="home-product-item__outstanding">
+                                            <span class="home-product-item__outstanding-trend">#ShopXuHuong</span>
+                                        </div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">238.000đ</span>
+                                            <span class="home-product-item__price-current">99.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-check">
+                                                <i class="home-product-item__like-off fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-on fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 25.9k</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__country">Nam Định</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">58%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+
+                                        </div>
+                                    </a>
+                                </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
@@ -888,16 +1155,19 @@
                         </ul>
                     </div>
                     <div class="col l-2-4 m-4 c-5">
-                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <h3 class="footer__heading">Thanh Toán</h3>
                         <ul class="footer__list">
                             <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Giới Thiệu Về DT-Shop</a>
+                                <i class="footer-icon-pay fa-brands fa-cc-visa fa-2xl"></i>
+                                <i class="footer-icon-pay fa-brands fa-cc-jcb fa-2xl"></i>
+                                
                             </li>
                             <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Tuyển Dụng</a>
+                                <i class="footer-icon-pay fa-brands fa-cc-amex fa-2xl"></i>
+                                <i class="footer-icon-pay fa-brands fa-cc-mastercard fa-2xl"></i>
                             </li>
                             <li class="footer__list-item">
-                                <a href="" class="footer__list-item-link">Điều Khoản DT-Shop</a>
+                                
                             </li>
                         </ul>
                     </div>
