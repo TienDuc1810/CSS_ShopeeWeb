@@ -39,6 +39,12 @@
     .mobile-category{
         display: block;
     }
+    .footer__title-item::before{
+        border: none;
+    }
+    a.footer__title-item{
+        margin: 15px 0;
+    }
 }
 
 /* Tablet */
@@ -52,6 +58,9 @@
     }
     .header-with-search{
         padding-top: 13px;
+    }
+    .footer__title-item::before{
+        right: -10px;  
     }
 }
 
@@ -123,5 +132,8 @@
     }
     .footer__mobile{
         padding: 0 16px;
+    }
+    .footer__title-item:first-child{
+        margin-top: 25px;
     }
 }
